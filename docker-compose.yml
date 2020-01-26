@@ -1,0 +1,12 @@
+version: '3'
+services:
+  postgres:
+    container_name: springboot_starter_postgres
+    image: postgres:12
+    ports:
+    - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./src/main/resources/db:/docker-entrypoint-initdb.d
