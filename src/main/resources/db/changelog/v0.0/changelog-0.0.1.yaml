@@ -8,7 +8,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: id
-                  type: int
+                  type: bigint
                   autoIncrement: true
                   constraints:
                     primaryKey: true
@@ -29,4 +29,20 @@ databaseChangeLog:
                   name: is_foo
                   type: boolean
                   defaultValueBoolean: true
+        - insert:
+            tableName: foo
+            columns:
+              - column:
+                  name: version
+                  value: 0
+              - column:
+                  name: created
+                  value: now()
+              - column:
+                  name: name
+                  value: foo
+              - column:
+                  name: is_foo
+                  value: true
+
 

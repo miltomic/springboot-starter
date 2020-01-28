@@ -16,7 +16,7 @@ import java.time.Instant;
 public abstract class CommonEntity {
     @Id
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @Version
     @Column(name = "version")
