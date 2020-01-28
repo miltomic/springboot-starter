@@ -9,4 +9,4 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:
-      - ./src/main/resources/db:/docker-entrypoint-initdb.d
+      - ./src/main/resources/db/createdb:/docker-entrypoint-initdb.d

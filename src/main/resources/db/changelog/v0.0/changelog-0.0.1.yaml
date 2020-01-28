@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: foo
+      author: mtomic86
+      changes:
+        - createTable:
+            tableName: foo
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: version
+                  type: int
+              - column:
+                  name: created
+                  type: timestamp
+              - column:
+                  name: modified
+                  type: timestamp
+              - column:
+                  name: name
+                  type: varchar
+              - column:
+                  name: is_foo
+                  type: boolean
+                  defaultValueBoolean: true
+

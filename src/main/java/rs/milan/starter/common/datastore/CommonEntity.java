@@ -1,15 +1,19 @@
-package rs.milan.starter.foo.datastore;
+package rs.milan.starter.common.datastore;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+import javax.persistence.Version;
 import java.time.Instant;
 
-@Entity
-@Table(name = "foo")
-public class Foo {
-
+/**
+ * Entity containing common fields all other entities should contain.
+ */
+@MappedSuperclass
+public abstract class CommonEntity {
     @Id
     @Column(name = "id")
     private Integer id;
