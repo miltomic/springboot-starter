@@ -1,4 +1,4 @@
-package rs.milan.starter.foo;
+package rs.milan.starter.foo.service;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
