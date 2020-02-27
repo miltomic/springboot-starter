@@ -2,10 +2,6 @@
 
 Boilerplate code for a typical Spring Boot CRUD service
 
-## Getting Started
-
-TODO
-
 ### Prerequisites
 
 What things you need to install the software and how to install them
@@ -28,18 +24,6 @@ After all services in are started by docker compose just trigger Gradle ```bootR
 * ```gradlew bootRun``` on Windows
 
 Verify service is running by hitting the GET HTTP request against http://localhost:8080/starter/foos
-
-## Running the tests
-
-TODO
-
-### Break down into end to end tests
-
-TODO
-
-## Deployment
-
-TODO
 
 ## Built With
 
